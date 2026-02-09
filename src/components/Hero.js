@@ -7,7 +7,7 @@ const Hero = () => (
       <h1> Asime Domitila </h1>
       <h2>Frontend Doveloper</h2>
       <p className="hero-desc">Passionate about building a better tomorrow for all.</p>
-      <a href="#" className="btn">Hire Me</a>
+      <a href="#contact" className="btn">Hire Me</a>
     </div>
     <div className="hero-image">
       <img src="/assets/images/profile.png" alt="profile" />

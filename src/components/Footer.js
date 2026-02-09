@@ -20,8 +20,8 @@ const Footer = () => (
       <div className="footer-section services">
         <h2>Services</h2>
         <ul>
-          <li><a href="#">Frontend Developer</a></li>
-          <li><a href="#">Project Manager</a></li>
+          <li><a href="#services">Frontend Developer</a></li>
+          <li><a href="#services">Project Manager</a></li>
         </ul>
       </div>
 

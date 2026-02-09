@@ -9,7 +9,7 @@ const Navbar = () => (
       <li><a href="#services">Services</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#" className="cv-btn">Download CV</a></li>
+      <li><a href="#contact" className="cv-btn">Download CV</a></li>
     </ul>
   </nav>
 );
