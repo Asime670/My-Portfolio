@@ -4,11 +4,11 @@ const Navbar = () => (
   <nav className="navbar">
     <div className="logo">AD<span className="dot">.</span></div>
     <ul className="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li><a href="#" className="cv-btn">Download CV</a></li>
     </ul>
   </nav>

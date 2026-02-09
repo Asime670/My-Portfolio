@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Hero = () => (
-  <header className="hero">
+  <header className="hero" id="home">
     <div className="hero-content">
       <p>Hi, I am</p>
       <h1> Asime Domitila </h1>
