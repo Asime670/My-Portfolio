@@ -13,6 +13,13 @@ const Projects = () => {
             description: 'A real-time weather forecasting application providing accurate weather data for cities worldwide.',
             link: '#',
             hasLink: false
+        },
+        {
+            title: 'HairHub',
+            description: 'A luxury hair platform dedicated to helping you find premium quality hair products and styles. Elevating your hair experience with curated, high-end collections.',
+            link: '#',
+            hasLink: false,
+            pending: true
         }
     ];
 
@@ -22,6 +29,7 @@ const Projects = () => {
             <div className="project-cards">
                 {projects.map((project, index) => (
                     <div className="project-card" key={index}>
+                        {project.pending && <span className="pending-badge">Pending</span>}
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
                         {project.hasLink ? (

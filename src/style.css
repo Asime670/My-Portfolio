@@ -178,6 +178,13 @@ body {
     background: #e09400;
 }
 
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
 .hero-image img {
     width: 300px;
     height: 300px;
@@ -190,18 +197,14 @@ body {
     /* Orange glow effect */
 }
 
-.right .icons {
+.hero-image .icons {
     display: flex;
-    /* Aligns icons horizontally */
     align-items: center;
     justify-content: center;
-    /* Centers the icons within their container */
     gap: 12px;
-    margin-top: 30px;
-    /* Adjusted margin */
 }
 
-.right .icons .icon {
+.hero-image .icons .icon {
     width: 40px;
     height: 40px;
     background-color: white;
@@ -209,15 +212,13 @@ body {
     border-radius: 50%;
     cursor: pointer;
     display: flex;
-    /* Use flex to center icon content */
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease-in-out, background-color 0.3s;
 }
 
-.right .icons .icon:hover {
+.hero-image .icons .icon:hover {
     transform: scale(1.1);
-    /* Slightly enlarge on hover */
     background-color: orange;
 }
 
@@ -465,6 +466,19 @@ body {
     color: #666;
     font-style: italic;
     font-size: 14px;
+}
+
+.pending-badge {
+    display: inline-block;
+    background: orange;
+    color: black;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
 /* Contact Section */

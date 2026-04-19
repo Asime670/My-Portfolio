@@ -12,8 +12,6 @@ const Hero = () => (
     </div>
     <div className="hero-image">
       <img src="/assets/images/profile.png" alt="profile" />
-    </div>
-    <div className="right">
       <div className="icons">
         <img className="icon" src="assets/icons/facebook.png" alt="Facebook" />
         <img className="icon" src="assets/icons/twitter.png" alt="Twitter" />
