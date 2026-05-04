@@ -18,8 +18,7 @@ const Projects = () => {
             title: 'HairHub',
             description: 'A luxury hair platform dedicated to helping you find premium quality hair products and styles. Elevating your hair experience with curated, high-end collections.',
             link: '#',
-            hasLink: false,
-            pending: true
+            hasLink: false
         }
     ];
 

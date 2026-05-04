@@ -10,9 +10,9 @@ const About = () => (
       <p>I am a Frontend Developer with hands-on experience building responsive and user-friendly web applications using React.js and Next.js. Passionate about turning ideas into clean, functional digital solutions. Highly motivated, adaptable, and always open to learning new technologies and improving technical skills.</p>
       <div className="skills">
         <label>Frontend Developer</label>
-        <div className="progress"><div style={{ width: '90%' }}></div></div>
+        <div className="progress"><div style={{ width: '70%' }}></div></div>
         <label>Project Manager</label>
-        <div className="progress"><div style={{ width: '80%' }}></div></div>
+        <div className="progress"><div style={{ width: '40%' }}></div></div>
 
       </div>
     </div>
