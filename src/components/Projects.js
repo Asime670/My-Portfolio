@@ -3,6 +3,18 @@ import React from 'react';
 const Projects = () => {
     const projects = [
         {
+            title: 'Automated-MCQ',
+            description: 'An automated multiple-choice question system for online testing, exam management, and instant score evaluation.',
+            link: 'https://automatedmcqsystemasimedomitila.vercel.app/',
+            hasLink: true
+        },
+        {
+            title: 'Streaming Platform',
+            description: 'A real-time live streaming platform designed for seamless video broadcasting and interactive user experiences.',
+            link: 'https://livestreamingplatform.vercel.app/',
+            hasLink: true
+        },
+        {
             title: 'Cookpal',
             description: 'A comprehensive recipe application showcasing various cuisines and cooking techniques.',
             link: 'http://cookpal-app.vercel.app/',
@@ -22,12 +34,23 @@ const Projects = () => {
         }
     ];
 
+    const handleCardClick = (link, hasLink, e) => {
+        if (!hasLink || link === '#') return;
+        // Avoid double triggering if clicking direct link button
+        if (e.target.tagName.toLowerCase() === 'a') return;
+        window.open(link, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <section className="projects" id="projects">
             <h2>Projects</h2>
             <div className="project-cards">
                 {projects.map((project, index) => (
-                    <div className="project-card" key={index}>
+                    <div 
+                        className={`project-card ${project.hasLink ? 'clickable' : ''}`} 
+                        key={index}
+                        onClick={(e) => handleCardClick(project.link, project.hasLink, e)}
+                    >
                         {project.pending && <span className="pending-badge">Pending</span>}
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
