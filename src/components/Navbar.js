@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = () => (
+const Navbar = ({ onOpenCV }) => (
   <nav className="navbar">
     <div className="logo">AD<span className="dot">.</span></div>
     <ul className="nav-links">
@@ -9,7 +9,11 @@ const Navbar = () => (
       <li><a href="#services">Services</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="/assets/cv.pdf" className="cv-btn" target="_blank" rel="noopener noreferrer" download>Download CV</a></li>
+      <li>
+        <button className="cv-btn" onClick={onOpenCV} style={{ cursor: 'pointer', border: 'none' }}>
+          View / Print CV
+        </button>
+      </li>
     </ul>
   </nav>
 );

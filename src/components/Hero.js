@@ -1,14 +1,20 @@
 import React from 'react';
 
-const Hero = () => (
+const Hero = ({ onOpenCV }) => (
   <header className="hero" id="home">
     <div className="hero-content">
       <p>Hi, I am</p>
       <h1> Asime Domitila </h1>
-      <h2>Frontend Doveloper</h2>
+      <h2>Frontend Developer</h2>
       <p className="hero-desc">Passionate about building a better tomorrow for all.</p>
       <a href="#contact" className="btn">Hire Me</a>
-      <a href="/assets/cv.pdf" className="btn" target="_blank" rel="noopener noreferrer" download style={{ marginLeft: '10px' }}>Download CV</a>
+      <button 
+        className="btn" 
+        onClick={onOpenCV} 
+        style={{ marginLeft: '10px', cursor: 'pointer', border: 'none' }}
+      >
+        View / Print CV
+      </button>
     </div>
     <div className="hero-image">
       <img src="/assets/images/profile.png" alt="profile" />
