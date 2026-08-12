@@ -2,7 +2,8 @@ import React from 'react';
 import { projectsData } from '../data/portfolioData';
 
 const Projects = () => {
-    const projects = projectsData;
+    // Automatically sort so ready-to-view projects come first, and in-progress projects come below
+    const projects = [...projectsData].sort((a, b) => (b.hasLink ? 1 : 0) - (a.hasLink ? 1 : 0));
 
     const handleCardClick = (link, hasLink, e) => {
         if (!hasLink || link === '#') return;

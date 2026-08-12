@@ -17,6 +17,7 @@ export const personalInfo = {
 };
 
 export const projectsData = [
+    // Completed / Ready to View Projects
     {
         title: 'Automated-MCQ',
         category: 'Web Application',
@@ -40,6 +41,15 @@ export const projectsData = [
         link: 'http://cookpal-app.vercel.app/',
         hasLink: true,
         highlights: 'Recipe search & filter, interactive cooking steps, responsive UI.'
+    },
+    // Projects In Progress
+    {
+        title: 'SAWFLIX',
+        category: 'Media & Cultural Ecosystem',
+        description: 'A central digital platform dedicated to discovering, publishing, and celebrating Cameroonian movies, music, artists, and cultural content.',
+        link: '#',
+        hasLink: false,
+        highlights: 'Central digital ecosystem connecting Cameroonian creators with audiences and preserving cultural identity.'
     },
     {
         title: 'Weather Website',

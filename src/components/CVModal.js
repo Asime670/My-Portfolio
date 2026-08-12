@@ -58,7 +58,9 @@ const CVModal = ({ isOpen, onClose }) => {
                             <em>(Dynamically updated from live portfolio)</em>
                         </p>
                         <div className="cv-projects-list">
-                            {projectsData.map((project, index) => (
+                            {[...projectsData]
+                                .sort((a, b) => (b.hasLink ? 1 : 0) - (a.hasLink ? 1 : 0))
+                                .map((project, index) => (
                                 <div className="cv-project-item" key={index}>
                                     <div className="cv-project-header">
                                         <h4>{project.title}</h4>
