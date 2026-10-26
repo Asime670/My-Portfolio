@@ -204,6 +204,12 @@ body {
     gap: 12px;
 }
 
+.hero-image .icons a {
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
 .hero-image .icons .icon {
     width: 40px;
     height: 40px;
@@ -215,9 +221,11 @@ body {
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease-in-out, background-color 0.3s;
+    object-fit: contain;
 }
 
-.hero-image .icons .icon:hover {
+.hero-image .icons .icon:hover,
+.hero-image .icons a:hover .icon {
     transform: scale(1.1);
     background-color: orange;
 }
@@ -589,8 +597,12 @@ body {
 
 .social-icons {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+.social-icons a,
 .social-icons span {
     display: inline-flex;
     /* Use inline-flex to center content */
@@ -604,11 +616,14 @@ body {
     margin: 5px;
     cursor: pointer;
     font-size: 20px;
-    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
 }
 
+.social-icons a:hover,
 .social-icons span:hover {
     background: orange;
+    color: #fff;
     transform: translateY(-3px);
 }
 

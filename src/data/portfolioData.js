@@ -13,11 +13,25 @@ export const personalInfo = {
         'Responsive Web Design',
         'Git & GitHub Version Control',
         'Project Management & Agile Workflows'
-    ]
+    ],
+    socialLinks: {
+        facebook: 'https://www.facebook.com/asime.domitilamuyang',
+        linkedin: 'https://www.linkedin.com/in/asime-domitila-0419aa34b?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+        tiktok: 'https://www.tiktok.com/@tiliazelle123?_r=1&_t=ZS-9AsMtgNvhob',
+        x: 'https://x.com/AsimeDomitila'
+    }
 };
 
 export const projectsData = [
     // Completed / Ready to View Projects
+    {
+        title: 'Diamond C',
+        category: 'Restaurant Website',
+        description: 'A modern, responsive website designed for Diamond C restaurant, showcasing delicious dining menus, culinary specials, and online reservations.',
+        link: 'https://diamond-c.vercel.app/',
+        hasLink: true,
+        highlights: 'Interactive dining menu, table reservations, and elegant food showcase.'
+    },
     {
         title: 'Automated-MCQ',
         category: 'Web Application',
@@ -50,21 +64,5 @@ export const projectsData = [
         link: '#',
         hasLink: false,
         highlights: 'Central digital ecosystem connecting Cameroonian creators with audiences and preserving cultural identity.'
-    },
-    {
-        title: 'Weather Website',
-        category: 'Web Application',
-        description: 'A real-time weather forecasting application providing accurate weather data for cities worldwide.',
-        link: '#',
-        hasLink: false,
-        highlights: 'Live API data fetching, city search, weather metrics.'
-    },
-    {
-        title: 'HairHub',
-        category: 'E-Commerce Platform',
-        description: 'A luxury hair platform dedicated to helping you find premium quality hair products and styles.',
-        link: '#',
-        hasLink: false,
-        highlights: 'Product catalog showcase, luxury brand aesthetics, curated collections.'
     }
 ];
